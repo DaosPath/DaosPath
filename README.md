@@ -1,6 +1,6 @@
-# 👋 Saludos, soy DaosPath, Hijo del Sol
+# 👋 Hola, soy DaosPath, Hijo del Sol
 
-![Banner](https://via.placeholder.com/1000x200.png?text=Bienvenidos+a+mi+Dominio+GitHub)
+![Banner](https://download1501.mediafire.com/npw1rusnk3mgL9Fb7FsmisjgX9ONaembdy2hp_8QRQTn9ZDjSsukbejI5IwzgRJOgMz59ryN1fhDtTr5swbGAHxLNb9gBCScHEw3xxjyunv04FDH3XUac2IyO4bmJrwNELZtE6UozTfzK7AuqldyEeVYeqxSr7sxD8tfdMMDV52d/r04th29auh493kb/banner.png)
 
 ---
 
