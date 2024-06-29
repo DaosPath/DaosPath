@@ -1,11 +1,11 @@
-# 👋 Hola, soy DaosPath
+# 👋 Saludos, soy DaosPath
 
-![Banner](https://via.placeholder.com/1000x200.png?text=Bienvenidos+a+mi+Perfil+de+GitHub)
+![Banner](https://via.placeholder.com/1000x200.png?text=Bienvenidos+a+mi+Dominio+GitHub)
 
 ---
 
-## ⚡ Dato curioso
-- Parte de la comunidad "Hijos del Sol" que sigue el bien supremo
+## 🌟 Mi Camino
+- Mi senda es guiada por la comunidad de "Hijos del Sol", quienes buscan el supremo bien.
 
 ---
 
