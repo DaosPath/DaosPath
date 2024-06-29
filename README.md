@@ -29,6 +29,7 @@
 
 1. [HijosDelSol](https://github.com/DaosPath/HijosDelSol) - Página web desarrollada en HTML.
 
+---
 
 ![Followers](https://img.shields.io/github/followers/DaosPath?style=social)
 ![Stars](https://img.shields.io/github/stars/DaosPath?style=social)
