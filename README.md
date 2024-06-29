@@ -2,34 +2,34 @@
 
 ![Banner](https://via.placeholder.com/1000x200.png?text=Bienvenidos+a+mi+Perfil+de+GitHub)
 
-## 👀 Me interesa ...
+## 👀 Intereses
 - Desarrollo web
 - Proyectos de código abierto
 - Aprender nuevas tecnologías
 
-## 🌱 Actualmente estoy aprendiendo ...
+## 🌱 Actualmente aprendiendo
 - HTML y CSS avanzado
 - JavaScript y frameworks modernos
-- Git y GitHub para control de versiones
+- Git y GitHub
 
-## 💞️ Busco colaborar en ...
+## 💞️ Colaboración
 - Proyectos web de código abierto
 - Desafíos de desarrollo frontend
-- Proyectos impulsados por la comunidad
+- Proyectos comunitarios
 
-## ⚡ Dato curioso:
-- Soy parte de una comunidad llamada "Hijos del Sol" que sigue el bien supremo.
+## ⚡ Dato curioso
+- Parte de la comunidad "Hijos del Sol" que sigue el bien supremo
 
 ## 📊 Estadísticas de GitHub
-
-![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=DaosPath&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DaosPath&layout=compact&theme=radical)
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=DaosPath&show_icons=true&theme=radical" alt="Estadísticas de GitHub" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DaosPath&layout=compact&theme=radical" alt="Top Lenguajes" />
+</div>
 
 ## 🌟 Proyecto Destacado
+- [HijosDelSol](https://github.com/DaosPath/HijosDelSol) - Página web desarrollada en HTML.
 
-1. [HijosDelSol](https://github.com/DaosPath/HijosDelSol) - Página web desarrollada en HTML.
-
----
-
-![Followers](https://img.shields.io/github/followers/DaosPath?style=social)
-![Stars](https://img.shields.io/github/stars/DaosPath?style=social)
+<div align="center">
+  <img src="https://img.shields.io/github/followers/DaosPath?style=social" alt="Followers" />
+  <img src="https://img.shields.io/github/stars/DaosPath?style=social" alt="Stars" />
+</div>
