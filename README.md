@@ -26,8 +26,8 @@
 
 ## 📊 Estadísticas de GitHub
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=DaosPath&show_icons=true&theme=radical" alt="Estadísticas de GitHub" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DaosPath&layout=compact&theme=radical" alt="Top Lenguajes" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=DaosPath&show_icons=true&theme=radical&locale=es" alt="Estadísticas de GitHub" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DaosPath&layout=compact&theme=radical&locale=es" alt="Principales lenguajes" />
 </div>
 
 ---
@@ -38,6 +38,6 @@
 ---
 
 <div align="center">
-  <img src="https://img.shields.io/github/followers/DaosPath?style=social" alt="Followers" />
-  <img src="https://img.shields.io/github/stars/DaosPath?style=social" alt="Stars" />
+  <img src="https://img.shields.io/github/followers/DaosPath?style=social" alt="Seguidores" />
+  <img src="https://img.shields.io/github/stars/DaosPath?style=social" alt="Estrellas" />
 </div>
