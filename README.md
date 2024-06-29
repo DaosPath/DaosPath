@@ -1,6 +1,6 @@
 # 👋 Hola, soy DaosPath
 
-![Banner](https://via.placeholder.com/1000x200.png?text=Bienvenidos+a+mi+Perfil+de+GitHub+DaosPath)
+![Banner](https://via.placeholder.com/1000x200.png?text=Bienvenidos+a+mi+Perfil+de+GitHub)
 
 ---
 
@@ -26,8 +26,8 @@
 
 ## 📊 Estadísticas de GitHub
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=DaosPath&show_icons=true&theme=radical" alt="Estadísticas de GitHub" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DaosPath&layout=compact&theme=radical" alt="Top Lenguajes" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=DaosPath&show_icons=true&theme=radical" alt="Estadísticas de GitHub" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DaosPath&layout=compact&theme=radical" alt="Top Lenguajes" />
 </div>
 
 ---
