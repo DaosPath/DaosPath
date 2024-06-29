@@ -1,6 +1,6 @@
 # 👋 Hola, soy DaosPath
 
-![Banner](https://via.placeholder.com/1000x200.png?text=Bienvenidos+a+mi+Perfil+de+GitHub)
+![Banner](https://download1501.mediafire.com/2pgbtsowytmgKdcrw0gg98P8A7tCL56FSG_BsKOCvj6giCDRAgdklvEmzSe5inDBbuGtIHZQxOhUKRgjzm5d670zyflDIkZWybuh4quE4fArA8CNBJ257hkKfuznezZ9LjY41pUpzbaaFcrYL-dauC8yIwpTS8j0X30k_J4rYrUk/r04th29auh493kb/banner.png)
 
 ---
 
