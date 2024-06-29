@@ -1,6 +1,6 @@
 # 👋 Hola, soy DaosPath, Hijo del Sol
 
-![Banner](https://download1501.mediafire.com/npw1rusnk3mgL9Fb7FsmisjgX9ONaembdy2hp_8QRQTn9ZDjSsukbejI5IwzgRJOgMz59ryN1fhDtTr5swbGAHxLNb9gBCScHEw3xxjyunv04FDH3XUac2IyO4bmJrwNELZtE6UozTfzK7AuqldyEeVYeqxSr7sxD8tfdMMDV52d/r04th29auh493kb/banner.png)
+![Banner](https://download1532.mediafire.com/rcwe0rtaikhgu-yoPKUAOf2z5jJurunb-_9Q6Tz6-aGXBJlLkTfeJe6VJ9hAJVsOXMHL1tJkroOJJztt1XDxyuRxc-YJXpRcsJJi1qXcjB7C3mbclDzQ-usVbk-m0kastS4r_fWtMuu6VDzeXh1TvU4lhw7VQhQAfnRDoFPSu8a-/vsh43hp7jmg9595/banner%281%29.webp)
 
 ---
 
