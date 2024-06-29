@@ -1,6 +1,6 @@
 # 👋 Hola, soy DaosPath
 
-![Banner](https://download1501.mediafire.com/2pgbtsowytmgKdcrw0gg98P8A7tCL56FSG_BsKOCvj6giCDRAgdklvEmzSe5inDBbuGtIHZQxOhUKRgjzm5d670zyflDIkZWybuh4quE4fArA8CNBJ257hkKfuznezZ9LjY41pUpzbaaFcrYL-dauC8yIwpTS8j0X30k_J4rYrUk/r04th29auh493kb/banner.png)
+![Banner](https://via.placeholder.com/1000x200.png?text=Bienvenidos+a+mi+Perfil+de+GitHub)
 
 ---
 
@@ -8,11 +8,6 @@
 - Desarrollo web
 - Proyectos de código abierto
 - Aprender nuevas tecnologías
-
-## 🌱 Actualmente aprendiendo
-- HTML y CSS avanzado
-- JavaScript y frameworks modernos
-- Git y GitHub
 
 ## 💞️ Colaboración
 - Proyectos web de código abierto
@@ -26,8 +21,14 @@
 
 ## 📊 Estadísticas de GitHub
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=DaosPath&show_icons=true&theme=radical&locale=es" alt="Estadísticas de GitHub" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DaosPath&layout=compact&theme=radical&locale=es" alt="Principales lenguajes" />
+  <img height="155" src="https://github-readme-stats.vercel.app/api?username=DaosPath&show_icons=true&theme=radical&locale=es&hide_border=true" alt="Estadísticas de GitHub" />
+  <img height="155" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DaosPath&layout=compact&theme=radical&locale=es&hide_border=true" alt="Principales lenguajes" />
+</div>
+
+<div align="center">
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DaosPath&theme=radical&hide_border=true" alt="Resumen del perfil" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=DaosPath&theme=radical&hide_border=true" alt="Lenguajes más usados en commits" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/stats?username=DaosPath&theme=radical&hide_border=true" alt="Estadísticas generales" />
 </div>
 
 ---
