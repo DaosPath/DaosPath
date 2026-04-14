@@ -56,7 +56,6 @@
 
 ### 🤝 Cómo conectar
 
-- 🔗 Web / comunidad: [hijosdelsol.xyz](https://hijosdelsol.xyz)
 - 💬 Abierto a colaborar en proyectos web centrados en **cuidado personal**, **organización** y **espiritualidad práctica**.
 
 > “Que el código sirva a la luz, no al ruido.”
