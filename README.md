@@ -36,12 +36,6 @@
 - 🩺 **[Cic](https://github.com/DaosPath/Cic)**  
   Aplicación **React + Vite** para registrar el ciclo menstrual y obtener **insights asistidos por IA**, con enfoque en **privacidad**: datos locales vía IndexedDB, modo discreto y PWA lista para usarse offline.
 
-- 💰 **[CaiDelSol](https://github.com/DaosPath/CaiDelSol)**  
-  Gestor de **presupuestos y gastos personales** con gráficos interactivos (Chart.js), categorías personalizadas y una vista clara del estado financiero para organizar mejor las finanzas del día a día.
-
-- 🌞 **[HijosDelSol](https://github.com/DaosPath/HijosDelSol)**  
-  Sitio web de la comunidad **Hijos del Sol**, con lecturas, recursos y enlaces para conectarse con la comunidad y su servidor de Discord.
-
 ---
 
 ### 📊 Estadísticas de GitHub
