@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="220" viewBox="0 0 920 220" role="img" aria-label="Sobre mi">
+  <rect width="920" height="220" rx="18" fill="#111827"/>
+  <rect x="1.5" y="1.5" width="917" height="217" rx="17.5" fill="none" stroke="#36405f"/>
+  <text x="34" y="50" fill="#8fb3ff" font-family="Segoe UI, Ubuntu, sans-serif" font-size="24" font-weight="900">Sobre mi</text>
+  <text x="34" y="78" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Trabajo en interfaces claras, investigacion reproducible y herramientas locales.</text>
+  <rect x="34" y="106" width="204" height="72" rx="14" fill="#20263a" opacity="0.78"/>
+  <text x="54" y="136" fill="#9ece6a" font-family="Segoe UI, Ubuntu, sans-serif" font-size="14" font-weight="850">Frontend web</text>
+  <text x="54" y="160" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12">HTML, CSS, JS, TS y React.</text>
+  <rect x="258" y="106" width="204" height="72" rx="14" fill="#20263a" opacity="0.78"/>
+  <text x="278" y="136" fill="#ffb86c" font-family="Segoe UI, Ubuntu, sans-serif" font-size="14" font-weight="850">Herramientas utiles</text>
+  <text x="278" y="160" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12">Ordenar vida, mente y recursos.</text>
+  <rect x="482" y="106" width="204" height="72" rx="14" fill="#20263a" opacity="0.78"/>
+  <text x="502" y="136" fill="#7dcfff" font-family="Segoe UI, Ubuntu, sans-serif" font-size="14" font-weight="850">Comunidad</text>
+  <text x="502" y="160" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12">Tecnologia para crecimiento real.</text>
+  <rect x="706" y="106" width="180" height="72" rx="14" fill="#20263a" opacity="0.78"/>
+  <text x="726" y="136" fill="#bb9af7" font-family="Segoe UI, Ubuntu, sans-serif" font-size="14" font-weight="850">Aprendizaje</text>
+  <text x="726" y="160" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12">Accesibilidad, PWA, local-first.</text>
+</svg>

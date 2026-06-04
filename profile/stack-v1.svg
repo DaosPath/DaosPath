@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="150" viewBox="0 0 920 150" role="img" aria-label="Stack tecnologico">
+  <rect width="920" height="150" rx="18" fill="#111827"/>
+  <rect x="1.5" y="1.5" width="917" height="147" rx="17.5" fill="none" stroke="#36405f"/>
+  <text x="34" y="48" fill="#8fb3ff" font-family="Segoe UI, Ubuntu, sans-serif" font-size="23" font-weight="900">Stack</text>
+  <text x="34" y="72" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Tecnologias para interfaces, apps locales y sistemas de desarrollo.</text>
+  <g font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="850">
+    <rect x="34" y="96" width="92" height="30" rx="15" fill="#e34f26" opacity="0.95"/><text x="80" y="116" fill="#ffffff" text-anchor="middle">HTML5</text>
+    <rect x="136" y="96" width="84" height="30" rx="15" fill="#1572b6" opacity="0.95"/><text x="178" y="116" fill="#ffffff" text-anchor="middle">CSS3</text>
+    <rect x="230" y="96" width="118" height="30" rx="15" fill="#f7df1e" opacity="0.95"/><text x="289" y="116" fill="#111827" text-anchor="middle">JavaScript</text>
+    <rect x="358" y="96" width="118" height="30" rx="15" fill="#3178c6" opacity="0.95"/><text x="417" y="116" fill="#ffffff" text-anchor="middle">TypeScript</text>
+    <rect x="486" y="96" width="92" height="30" rx="15" fill="#20263a"/><text x="532" y="116" fill="#7dcfff" text-anchor="middle">React</text>
+    <rect x="588" y="96" width="82" height="30" rx="15" fill="#646cff" opacity="0.95"/><text x="629" y="116" fill="#ffffff" text-anchor="middle">Vite</text>
+    <rect x="680" y="96" width="78" height="30" rx="15" fill="#f05032" opacity="0.95"/><text x="719" y="116" fill="#ffffff" text-anchor="middle">Git</text>
+    <rect x="768" y="96" width="94" height="30" rx="15" fill="#7dcfff" opacity="0.14"/><text x="815" y="116" fill="#7dcfff" text-anchor="middle">Docker</text>
+  </g>
+</svg>
