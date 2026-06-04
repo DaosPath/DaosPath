@@ -1,28 +1,29 @@
 <h1 align="center">🌞 Hola, soy <strong>DaosPath</strong></h1>
 
 <p align="center">
-  Desarrollador web e investigador independiente. Construyo herramientas simples,
-  útiles y humanas para código abierto, productividad local y comunidades reales.
+  Desarrollador web e investigador independiente.
+  Construyo herramientas simples, útiles y humanas para código abierto,
+  productividad local y comunidades reales.
 </p>
 
 <p align="center">
   <a href="https://github.com/DaosPath">
-    <img src="https://komarev.com/ghpvc/?username=DaosPath&label=Visitas&style=for-the-badge&color=8fb3ff&labelColor=111827" alt="Visitas al perfil de DaosPath" />
+    <img src="https://komarev.com/ghpvc/?username=DaosPath&label=visitas&style=flat&color=8fb3ff&labelColor=111827" alt="Visitas al perfil de DaosPath" />
   </a>
   <a href="https://hijosdelsol.xyz">
-    <img src="https://img.shields.io/badge/Hijos%20del%20Sol-Comunidad-f6c453?style=for-the-badge&labelColor=111827" alt="Hijos del Sol" />
+    <img src="https://img.shields.io/badge/Hijos%20del%20Sol-comunidad-f6c453?style=flat&labelColor=111827" alt="Hijos del Sol" />
   </a>
-  <img src="https://img.shields.io/badge/Open%20source-Herramientas%20%2B%20investigaci%C3%B3n-9ece6a?style=for-the-badge&labelColor=111827" alt="Open source, herramientas e investigación" />
+  <img src="https://img.shields.io/badge/open%20source-investigaci%C3%B3n%20%2B%20herramientas-9ece6a?style=flat&labelColor=111827" alt="Open source, investigación y herramientas" />
 </p>
 
 ---
 
 ### 🧭 Sobre mí
 
-- Desarrollo interfaces web con **HTML**, **CSS**, **JavaScript**, **TypeScript** y **React**.
-- Me interesan los sistemas que ayudan a ordenar ideas, recursos y trabajo cotidiano.
-- Exploro investigación reproducible, agentes, bases de datos y herramientas local-first.
-- Formo parte de **Hijos del Sol**, donde pienso la tecnología como apoyo al crecimiento personal y comunitario.
+- **Frontend:** interfaces web con **HTML**, **CSS**, **JavaScript**, **TypeScript** y **React**.
+- **Herramientas:** sistemas que ayudan a ordenar ideas, recursos y trabajo cotidiano.
+- **Investigación:** reproducibilidad, agentes, bases de datos y flujos local-first.
+- **Comunidad:** tecnología al servicio del crecimiento personal y comunitario con **Hijos del Sol**.
 
 ---
 
