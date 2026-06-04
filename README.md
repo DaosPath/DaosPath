@@ -43,7 +43,7 @@
 
 <p align="center">
   <a href="https://github.com/DaosPath/Cic">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=DaosPath&repo=Cic&theme=tokyonight&hide_border=true" alt="Repositorio Cic" />
+    <img src="./profile/cic.svg" alt="Repositorio Cic" />
   </a>
 </p>
 
@@ -55,10 +55,10 @@
 
 <p align="center">
   <a href="https://github.com/DaosPath">
-    <img height="165" src="https://github-readme-stats.vercel.app/api?username=DaosPath&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&rank_icon=github" alt="Estadísticas de GitHub de DaosPath" />
+    <img height="165" src="./profile/stats.svg" alt="Estadísticas de GitHub de DaosPath" />
   </a>
   <a href="https://github.com/DaosPath">
-    <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DaosPath&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Lenguajes más usados por DaosPath" />
+    <img height="165" src="./profile/top-langs.svg" alt="Lenguajes más usados por DaosPath" />
   </a>
 </p>
 
