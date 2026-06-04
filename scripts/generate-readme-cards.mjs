@@ -88,12 +88,13 @@ function statRow(x, y, label, value, color = theme.accent) {
 
 function metricTile(x, y, width, label, value, color, icon) {
   return [
-    `  <rect x="${x}" y="${y}" width="${width}" height="54" rx="12" fill="${theme.panel}" opacity="0.72"/>`,
-    `  <rect x="${x + 0.5}" y="${y + 0.5}" width="${width - 1}" height="53" rx="11.5" fill="none" stroke="${color}" opacity="0.22"/>`,
-    `  <circle cx="${x + 27}" cy="${y + 27}" r="15" fill="${color}" opacity="0.14"/>`,
-    text(x + 27, y + 32, icon, { size: 14, color, weight: 800, anchor: "middle" }),
-    text(x + 50, y + 23, label, { size: 12, color: theme.muted, weight: 650 }),
-    text(x + 50, y + 42, value, { size: 18, color, weight: 850 }),
+    `  <rect x="${x}" y="${y}" width="${width}" height="62" rx="15" fill="${theme.panel}" opacity="0.76"/>`,
+    `  <rect x="${x + 0.5}" y="${y + 0.5}" width="${width - 1}" height="61" rx="14.5" fill="none" stroke="${color}" opacity="0.24"/>`,
+    `  <rect x="${x + 12}" y="${y + 14}" width="34" height="34" rx="12" fill="${color}" opacity="0.16"/>`,
+    text(x + 29, y + 37, icon, { size: 14, color, weight: 850, anchor: "middle" }),
+    text(x + 58, y + 25, label, { size: 12, color: theme.muted, weight: 700 }),
+    text(x + 58, y + 45, "GitHub", { size: 11, color: theme.muted }),
+    text(x + width - 24, y + 43, value, { size: 25, color, weight: 900, anchor: "end" }),
   ].join("\n");
 }
 
@@ -163,19 +164,22 @@ function renderStatsCard(user, repos) {
   );
 
   return shell({
-    width: 560,
-    height: 230,
+    width: 640,
+    height: 285,
     label: `Estadisticas de GitHub de ${owner}`,
     body: [
-      text(28, 43, `GitHub de ${owner}`, { size: 24, color: theme.title, weight: 850 }),
-      text(28, 67, "Pulso publico del perfil", { size: 12, color: theme.muted }),
-      `  <rect x="392" y="25" width="128" height="32" rx="16" fill="${theme.title}" opacity="0.12"/>`,
-      text(456, 46, "perfil activo", { size: 12, color: theme.title, weight: 800, anchor: "middle" }),
-      metricTile(28, 94, 246, "Repositorios publicos", compactNumber(user.public_repos), theme.accent, "R"),
-      metricTile(294, 94, 246, "Estrellas recibidas", compactNumber(stars), theme.orange, "S"),
-      metricTile(28, 160, 246, "Forks", compactNumber(forks), theme.pink, "F"),
-      metricTile(294, 160, 246, "Seguidores", compactNumber(user.followers), theme.cyan, "U"),
-      text(404, 222, `actualizado ${dateLabel(updated)}`, { size: 11, color: theme.muted }),
+      `  <rect x="28" y="26" width="584" height="66" rx="18" fill="${theme.panel}" opacity="0.38"/>`,
+      text(48, 56, `GitHub de ${owner}`, { size: 26, color: theme.title, weight: 900 }),
+      text(48, 78, "Pulso publico del perfil", { size: 12, color: theme.muted }),
+      `  <rect x="476" y="42" width="118" height="30" rx="15" fill="${theme.title}" opacity="0.13"/>`,
+      `  <circle cx="494" cy="57" r="5" fill="${theme.accent}"/>`,
+      text(548, 62, "perfil activo", { size: 12, color: theme.title, weight: 850, anchor: "middle" }),
+      metricTile(30, 116, 286, "Repositorios publicos", compactNumber(user.public_repos), theme.accent, "R"),
+      metricTile(324, 116, 286, "Estrellas recibidas", compactNumber(stars), theme.orange, "S"),
+      metricTile(30, 190, 286, "Forks", compactNumber(forks), theme.pink, "F"),
+      metricTile(324, 190, 286, "Seguidores", compactNumber(user.followers), theme.cyan, "U"),
+      `  <line x1="30" y1="268" x2="610" y2="268" stroke="${theme.border}" opacity="0.5"/>`,
+      text(452, 278, `actualizado ${dateLabel(updated)}`, { size: 11, color: theme.muted }),
     ].join("\n"),
   });
 }
@@ -243,6 +247,6 @@ const [user, repos, featured] = await Promise.all([
 ]);
 const languages = await getLanguageTotals(repos);
 
-await writeFile(`${outputDir}/stats-v2.svg`, renderStatsCard(user, repos), "utf8");
+await writeFile(`${outputDir}/stats-v3.svg`, renderStatsCard(user, repos), "utf8");
 await writeFile(`${outputDir}/languages-donut-v2.svg`, renderLanguagesCard(languages), "utf8");
 await writeFile(`${outputDir}/cic.svg`, renderRepoCard(featured), "utf8");
