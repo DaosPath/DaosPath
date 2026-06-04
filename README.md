@@ -7,11 +7,12 @@
 
 <p align="center">
   <a href="https://github.com/DaosPath">
-    <img src="https://komarev.com/ghpvc/?username=DaosPath&style=flat-square&color=0e75b6" alt="Visitas al perfil de DaosPath" />
+    <img src="https://komarev.com/ghpvc/?username=DaosPath&label=Visitas&style=for-the-badge&color=8fb3ff&labelColor=111827" alt="Visitas al perfil de DaosPath" />
   </a>
   <a href="https://hijosdelsol.xyz">
-    <img src="https://img.shields.io/badge/Hijos%20del%20Sol-Comunidad-f6c453?style=flat-square" alt="Hijos del Sol" />
+    <img src="https://img.shields.io/badge/Hijos%20del%20Sol-Comunidad-f6c453?style=for-the-badge&labelColor=111827" alt="Hijos del Sol" />
   </a>
+  <img src="https://img.shields.io/badge/Open%20source-Herramientas%20%2B%20investigaci%C3%B3n-9ece6a?style=for-the-badge&labelColor=111827" alt="Open source, herramientas e investigación" />
 </p>
 
 ---
@@ -28,14 +29,12 @@
 ### 🛠️ Stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,vite,git,docker&theme=dark" alt="HTML, CSS, JavaScript, TypeScript, React, Vite, Git y Docker" />
+</p>
+
+<p align="center">
+  <strong>Frontend:</strong> HTML · CSS · JavaScript · TypeScript · React · Vite<br/>
+  <strong>Tooling:</strong> Git · Docker · Tauri · Rust · PostgreSQL
 </p>
 
 ---
