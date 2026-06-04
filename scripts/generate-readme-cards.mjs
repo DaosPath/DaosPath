@@ -189,7 +189,7 @@ function renderLanguagesCard(languages) {
     label: `Lenguajes mas usados por ${owner}`,
     body: [
       text(26, 42, "Lenguajes mas usados", { size: 21, color: theme.title, weight: 800 }),
-      text(26, 65, "Distribucion por bytes", { size: 12, color: theme.muted }),
+      text(224, 62, "Distribucion por bytes", { size: 12, color: theme.muted }),
       `  <circle cx="116" cy="128" r="58" fill="none" stroke="${theme.panel}" stroke-width="28"/>`,
       ...slices,
       `  <circle cx="116" cy="128" r="35" fill="${theme.bg}"/>`,
