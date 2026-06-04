@@ -39,15 +39,28 @@
 
 ---
 
-### 🌟 Proyecto destacado
+### 🌟 Proyectos destacados
 
 <p align="center">
+  <a href="https://github.com/DaosPath/state-transfer-protocols">
+    <img width="410" src="./profile/project-state-transfer.svg" alt="Repositorio state-transfer-protocols" />
+  </a>
+  <a href="https://github.com/DaosPath/DockAMP">
+    <img width="410" src="./profile/project-dockamp.svg" alt="Repositorio DockAMP" />
+  </a>
+  <br/>
+  <a href="https://github.com/DaosPath/qhapaqxian-db">
+    <img width="410" src="./profile/project-qhapaqxian-db.svg" alt="Repositorio qhapaqxian-db" />
+  </a>
   <a href="https://github.com/DaosPath/Cic">
-    <img src="./profile/cic.svg" alt="Repositorio Cic" />
+    <img width="410" src="./profile/project-cic.svg" alt="Repositorio Cic" />
   </a>
 </p>
 
-**Cic** es una aplicación **React + Vite** para registrar el ciclo menstrual y obtener insights asistidos por IA, con enfoque en privacidad: datos locales vía IndexedDB, modo discreto y PWA lista para usarse offline.
+- **state-transfer-protocols**: investigación reproducible sobre handoff multilingüe entre agentes.
+- **DockAMP**: stack local moderno tipo XAMPP con Docker, Tauri, React, TypeScript y Rust.
+- **qhapaqxian-db**: fork experimental de PostgreSQL orientado a flujos agent-native.
+- **Cic**: PWA privada para registro del ciclo, datos locales e insights asistidos por IA.
 
 ---
 

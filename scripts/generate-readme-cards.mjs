@@ -1,8 +1,33 @@
 import { mkdir, writeFile } from "node:fs/promises";
 
 const owner = "DaosPath";
-const featuredRepo = "Cic";
 const outputDir = "profile";
+const featuredRepos = [
+  {
+    name: "state-transfer-protocols",
+    file: "project-state-transfer.svg",
+    label: "Investigacion",
+    fallback: "Reproducibility package for multilingual multi-agent handoff protocols.",
+  },
+  {
+    name: "DockAMP",
+    file: "project-dockamp.svg",
+    label: "Dev stack",
+    fallback: "Modern local stack manager powered by Docker, Tauri, React, TypeScript, and Rust.",
+  },
+  {
+    name: "qhapaqxian-db",
+    file: "project-qhapaqxian-db.svg",
+    label: "Agent-native DB",
+    fallback: "QhapaqXian DB: agent-native PostgreSQL fork bootstrap.",
+  },
+  {
+    name: "Cic",
+    file: "project-cic.svg",
+    label: "Health PWA",
+    fallback: "Aplicacion React + Vite para registro del ciclo, privacidad local y modo offline.",
+  },
+];
 const token = process.env.GITHUB_TOKEN;
 const headers = {
   Accept: "application/vnd.github+json",
@@ -217,36 +242,49 @@ function renderLanguagesCard(languages) {
   });
 }
 
-function renderRepoCard(repo) {
-  const description = repo.description || "Aplicacion web con foco en privacidad, claridad y cuidado personal.";
+function truncate(value, limit) {
+  return value.length > limit ? `${value.slice(0, limit - 3)}...` : value;
+}
+
+function renderRepoCard(repo, meta) {
+  const description = repo.description || meta.fallback;
+  const license = repo.license?.spdx_id && repo.license.spdx_id !== "NOASSERTION" ? repo.license.spdx_id : "Public";
+  const language = repo.language || "Code";
 
   return shell({
-    width: 540,
-    height: 150,
-    label: `Repositorio ${featuredRepo}`,
+    width: 560,
+    height: 170,
+    label: `Repositorio ${repo.name}`,
     body: [
-      text(28, 44, `${owner} / ${featuredRepo}`, { size: 22, color: theme.title, weight: 800 }),
-      text(28, 72, description.length > 78 ? `${description.slice(0, 75)}...` : description, { size: 13, color: theme.text }),
-      `  <rect x="28" y="98" width="88" height="28" rx="14" fill="${theme.orange}" opacity="0.14"/>`,
-      text(44, 117, `Stars ${compactNumber(repo.stargazers_count)}`, { size: 13, color: theme.orange, weight: 800 }),
-      `  <rect x="128" y="98" width="86" height="28" rx="14" fill="${theme.pink}" opacity="0.14"/>`,
-      text(144, 117, `Forks ${compactNumber(repo.forks_count)}`, { size: 13, color: theme.pink, weight: 800 }),
-      `  <rect x="226" y="98" width="116" height="28" rx="14" fill="${theme.accent}" opacity="0.14"/>`,
-      text(244, 117, repo.language || "Web", { size: 13, color: theme.accent, weight: 800 }),
-      text(398, 126, `actualizado ${dateLabel(repo.updated_at)}`, { size: 11, color: theme.muted }),
+      `  <rect x="24" y="24" width="122" height="28" rx="14" fill="${theme.title}" opacity="0.13"/>`,
+      text(85, 43, meta.label, { size: 12, color: theme.title, weight: 850, anchor: "middle" }),
+      text(28, 82, `${owner} / ${repo.name}`, { size: 22, color: theme.text, weight: 900 }),
+      text(28, 108, truncate(description, 74), { size: 13, color: theme.muted, weight: 500 }),
+      `  <rect x="28" y="128" width="82" height="28" rx="14" fill="${theme.orange}" opacity="0.14"/>`,
+      text(44, 147, `Stars ${compactNumber(repo.stargazers_count)}`, { size: 12, color: theme.orange, weight: 800 }),
+      `  <rect x="122" y="128" width="82" height="28" rx="14" fill="${theme.pink}" opacity="0.14"/>`,
+      text(138, 147, `Forks ${compactNumber(repo.forks_count)}`, { size: 12, color: theme.pink, weight: 800 }),
+      `  <rect x="216" y="128" width="120" height="28" rx="14" fill="${theme.accent}" opacity="0.14"/>`,
+      text(234, 147, language, { size: 12, color: theme.accent, weight: 800 }),
+      `  <rect x="348" y="128" width="112" height="28" rx="14" fill="${theme.cyan}" opacity="0.12"/>`,
+      text(366, 147, license, { size: 12, color: theme.cyan, weight: 800 }),
+      text(438, 48, dateLabel(repo.updated_at), { size: 11, color: theme.muted }),
     ].join("\n"),
   });
 }
 
 await mkdir(outputDir, { recursive: true });
 
-const [user, repos, featured] = await Promise.all([
+const [user, repos, projectRepos] = await Promise.all([
   fetchJson(`https://api.github.com/users/${owner}`),
   getPublicRepos(),
-  fetchJson(`https://api.github.com/repos/${owner}/${featuredRepo}`),
+  Promise.all(featuredRepos.map((repo) => fetchJson(`https://api.github.com/repos/${owner}/${repo.name}`))),
 ]);
 const languages = await getLanguageTotals(repos);
 
 await writeFile(`${outputDir}/stats-v3.svg`, renderStatsCard(user, repos), "utf8");
 await writeFile(`${outputDir}/languages-donut-v2.svg`, renderLanguagesCard(languages), "utf8");
-await writeFile(`${outputDir}/cic.svg`, renderRepoCard(featured), "utf8");
+await Promise.all(
+  featuredRepos.map((repo, index) => writeFile(`${outputDir}/${repo.file}`, renderRepoCard(projectRepos[index], repo), "utf8")),
+);
+await writeFile(`${outputDir}/cic.svg`, renderRepoCard(projectRepos.find((repo) => repo.name === "Cic"), featuredRepos.find((repo) => repo.name === "Cic")), "utf8");
