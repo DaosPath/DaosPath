@@ -86,6 +86,17 @@ function statRow(x, y, label, value, color = theme.accent) {
   ].join("\n");
 }
 
+function metricTile(x, y, width, label, value, color, icon) {
+  return [
+    `  <rect x="${x}" y="${y}" width="${width}" height="54" rx="12" fill="${theme.panel}" opacity="0.72"/>`,
+    `  <rect x="${x + 0.5}" y="${y + 0.5}" width="${width - 1}" height="53" rx="11.5" fill="none" stroke="${color}" opacity="0.22"/>`,
+    `  <circle cx="${x + 27}" cy="${y + 27}" r="15" fill="${color}" opacity="0.14"/>`,
+    text(x + 27, y + 32, icon, { size: 14, color, weight: 800, anchor: "middle" }),
+    text(x + 50, y + 23, label, { size: 12, color: theme.muted, weight: 650 }),
+    text(x + 50, y + 42, value, { size: 18, color, weight: 850 }),
+  ].join("\n");
+}
+
 function polarToCartesian(cx, cy, radius, angle) {
   const radians = ((angle - 90) * Math.PI) / 180;
   return {
@@ -152,17 +163,19 @@ function renderStatsCard(user, repos) {
   );
 
   return shell({
-    width: 500,
-    height: 220,
+    width: 560,
+    height: 230,
     label: `Estadisticas de GitHub de ${owner}`,
     body: [
-      text(26, 42, `GitHub de ${owner}`, { size: 22, color: theme.title, weight: 800 }),
-      text(26, 65, "Resumen publico del perfil", { size: 12, color: theme.muted }),
-      statRow(28, 100, "Repositorios publicos", compactNumber(user.public_repos)),
-      statRow(28, 132, "Estrellas recibidas", compactNumber(stars), theme.orange),
-      statRow(28, 164, "Forks", compactNumber(forks), theme.pink),
-      statRow(28, 196, "Seguidores", compactNumber(user.followers), theme.accent),
-      text(356, 204, `actualizado ${dateLabel(updated)}`, { size: 11, color: theme.muted }),
+      text(28, 43, `GitHub de ${owner}`, { size: 24, color: theme.title, weight: 850 }),
+      text(28, 67, "Pulso publico del perfil", { size: 12, color: theme.muted }),
+      `  <rect x="392" y="25" width="128" height="32" rx="16" fill="${theme.title}" opacity="0.12"/>`,
+      text(456, 46, "perfil activo", { size: 12, color: theme.title, weight: 800, anchor: "middle" }),
+      metricTile(28, 94, 246, "Repositorios publicos", compactNumber(user.public_repos), theme.accent, "R"),
+      metricTile(294, 94, 246, "Estrellas recibidas", compactNumber(stars), theme.orange, "S"),
+      metricTile(28, 160, 246, "Forks", compactNumber(forks), theme.pink, "F"),
+      metricTile(294, 160, 246, "Seguidores", compactNumber(user.followers), theme.cyan, "U"),
+      text(404, 222, `actualizado ${dateLabel(updated)}`, { size: 11, color: theme.muted }),
     ].join("\n"),
   });
 }
@@ -230,6 +243,6 @@ const [user, repos, featured] = await Promise.all([
 ]);
 const languages = await getLanguageTotals(repos);
 
-await writeFile(`${outputDir}/stats.svg`, renderStatsCard(user, repos), "utf8");
+await writeFile(`${outputDir}/stats-v2.svg`, renderStatsCard(user, repos), "utf8");
 await writeFile(`${outputDir}/languages-donut-v2.svg`, renderLanguagesCard(languages), "utf8");
 await writeFile(`${outputDir}/cic.svg`, renderRepoCard(featured), "utf8");
