@@ -55,10 +55,10 @@
 
 <p align="center">
   <a href="https://github.com/DaosPath">
-    <img height="165" src="./profile/stats.svg" alt="Estadísticas de GitHub de DaosPath" />
+    <img height="220" src="./profile/stats.svg" alt="Estadísticas de GitHub de DaosPath" />
   </a>
   <a href="https://github.com/DaosPath">
-    <img height="165" src="./profile/top-langs.svg" alt="Lenguajes más usados por DaosPath" />
+    <img height="220" src="./profile/top-langs.svg" alt="Lenguajes más usados por DaosPath" />
   </a>
 </p>
 

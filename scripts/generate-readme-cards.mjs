@@ -11,21 +11,23 @@ const headers = {
 };
 
 const theme = {
-  bg: "#1a1b27",
-  title: "#70a5fd",
-  text: "#a9b1d6",
-  muted: "#7f849c",
-  accent: "#c3e88d",
+  bg: "#111827",
+  bg2: "#171b2e",
+  panel: "#20263a",
+  title: "#8fb3ff",
+  text: "#d8def8",
+  muted: "#8892b8",
+  accent: "#9ece6a",
   pink: "#f7768e",
-  orange: "#ff9e64",
-  border: "#2f3447",
+  orange: "#ffb86c",
+  cyan: "#7dcfff",
+  purple: "#bb9af7",
+  border: "#36405f",
 };
 
 async function fetchJson(url) {
   const response = await fetch(url, { headers });
-  if (!response.ok) {
-    throw new Error(`${response.status} ${response.statusText}: ${url}`);
-  }
+  if (!response.ok) throw new Error(`${response.status} ${response.statusText}: ${url}`);
   return response.json();
 }
 
@@ -47,29 +49,50 @@ function dateLabel(value) {
 
 function shell({ width, height, label, body }) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeXml(label)}">
-  <rect width="${width}" height="${height}" rx="8" fill="${theme.bg}"/>
-  <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="7.5" fill="none" stroke="${theme.border}"/>
+  <defs>
+    <linearGradient id="card-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="${theme.bg2}"/>
+      <stop offset="100%" stop-color="${theme.bg}"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect x="1" y="1" width="${width - 2}" height="${height - 2}" rx="14" fill="url(#card-bg)" filter="url(#soft-shadow)"/>
+  <rect x="1.5" y="1.5" width="${width - 3}" height="${height - 3}" rx="13.5" fill="none" stroke="${theme.border}"/>
+  <circle cx="${width - 34}" cy="30" r="44" fill="${theme.title}" opacity="0.06"/>
+  <circle cx="${width - 78}" cy="${height - 8}" r="52" fill="${theme.accent}" opacity="0.045"/>
 ${body}
 </svg>
 `;
 }
 
-function text(x, y, content, { size = 14, color = theme.text, weight = 400 } = {}) {
-  return `  <text x="${x}" y="${y}" fill="${color}" font-family="Segoe UI, Ubuntu, sans-serif" font-size="${size}" font-weight="${weight}">${escapeXml(content)}</text>`;
+function text(x, y, content, { size = 14, color = theme.text, weight = 400, anchor = "start" } = {}) {
+  return `  <text x="${x}" y="${y}" fill="${color}" font-family="Segoe UI, Ubuntu, sans-serif" font-size="${size}" font-weight="${weight}" text-anchor="${anchor}">${escapeXml(content)}</text>`;
+}
+
+function pill(x, y, value, color) {
+  const width = Math.max(44, String(value).length * 9 + 26);
+  return [
+    `  <rect x="${x}" y="${y - 19}" width="${width}" height="28" rx="14" fill="${color}" opacity="0.14"/>`,
+    text(x + width / 2, y, value, { color, weight: 800, anchor: "middle" }),
+  ].join("\n");
 }
 
 function statRow(x, y, label, value, color = theme.accent) {
   return [
-    text(x, y, label, { color: theme.text }),
-    text(x + 290, y, value, { color, weight: 700 }),
+    text(x, y, label, { size: 14, color: theme.text }),
+    pill(x + 310, y, value, color),
   ].join("\n");
 }
 
 function bar(x, y, width, color, label, value) {
   return [
-    text(x, y - 6, `${label} ${value}`, { size: 13, color: theme.text }),
-    `  <rect x="${x}" y="${y}" width="260" height="8" rx="4" fill="#24283b"/>`,
-    `  <rect x="${x}" y="${y}" width="${Math.max(6, width)}" height="8" rx="4" fill="${color}"/>`,
+    `  <circle cx="${x}" cy="${y - 12}" r="4" fill="${color}"/>`,
+    text(x + 12, y - 8, label, { size: 13, color: theme.text, weight: 650 }),
+    text(x + 312, y - 8, value, { size: 12, color: theme.muted, anchor: "end" }),
+    `  <rect x="${x}" y="${y}" width="312" height="9" rx="4.5" fill="${theme.panel}"/>`,
+    `  <rect x="${x}" y="${y}" width="${Math.max(8, width)}" height="9" rx="4.5" fill="${color}"/>`,
   ].join("\n");
 }
 
@@ -99,56 +122,64 @@ async function getLanguageTotals(repos) {
 function renderStatsCard(user, repos) {
   const stars = repos.reduce((sum, repo) => sum + repo.stargazers_count, 0);
   const forks = repos.reduce((sum, repo) => sum + repo.forks_count, 0);
-  const updated = repos.reduce((latest, repo) => (new Date(repo.updated_at) > new Date(latest) ? repo.updated_at : latest), repos[0]?.updated_at ?? user.updated_at);
+  const updated = repos.reduce(
+    (latest, repo) => (new Date(repo.updated_at) > new Date(latest) ? repo.updated_at : latest),
+    repos[0]?.updated_at ?? user.updated_at,
+  );
 
   return shell({
-    width: 495,
-    height: 195,
-    label: `Estadísticas de GitHub de ${owner}`,
+    width: 500,
+    height: 220,
+    label: `Estadisticas de GitHub de ${owner}`,
     body: [
-      text(24, 38, `Estadísticas de ${owner}`, { size: 20, color: theme.title, weight: 700 }),
-      statRow(24, 78, "Repositorios públicos", compactNumber(user.public_repos)),
-      statRow(24, 106, "Estrellas recibidas", compactNumber(stars), theme.orange),
-      statRow(24, 134, "Forks", compactNumber(forks), theme.pink),
-      statRow(24, 162, "Seguidores", compactNumber(user.followers), theme.accent),
-      text(350, 184, `upd ${dateLabel(updated)}`, { size: 11, color: theme.muted }),
+      text(26, 42, `GitHub de ${owner}`, { size: 22, color: theme.title, weight: 800 }),
+      text(26, 65, "Resumen publico del perfil", { size: 12, color: theme.muted }),
+      statRow(28, 100, "Repositorios publicos", compactNumber(user.public_repos)),
+      statRow(28, 132, "Estrellas recibidas", compactNumber(stars), theme.orange),
+      statRow(28, 164, "Forks", compactNumber(forks), theme.pink),
+      statRow(28, 196, "Seguidores", compactNumber(user.followers), theme.accent),
+      text(356, 204, `actualizado ${dateLabel(updated)}`, { size: 11, color: theme.muted }),
     ].join("\n"),
   });
 }
 
 function renderLanguagesCard(languages) {
   const total = languages.reduce((sum, [, bytes]) => sum + bytes, 0) || 1;
-  const colors = [theme.title, theme.accent, theme.pink, theme.orange, "#bb9af7", "#7dcfff"];
+  const colors = [theme.title, theme.accent, theme.pink, theme.orange, theme.purple, theme.cyan];
   const rows = languages.map(([language, bytes], index) => {
     const pct = (bytes / total) * 100;
-    return bar(24, 70 + index * 24, Math.round((pct / 100) * 260), colors[index % colors.length], language, `${pct.toFixed(1)}%`);
+    return bar(28, 80 + index * 25, Math.round((pct / 100) * 312), colors[index % colors.length], language, `${pct.toFixed(1)}%`);
   });
 
   return shell({
-    width: 360,
+    width: 380,
     height: 220,
-    label: `Lenguajes más usados por ${owner}`,
+    label: `Lenguajes mas usados por ${owner}`,
     body: [
-      text(24, 38, "Lenguajes más usados", { size: 20, color: theme.title, weight: 700 }),
+      text(26, 42, "Lenguajes mas usados", { size: 21, color: theme.title, weight: 800 }),
+      text(26, 65, "Por bytes en repos publicos", { size: 12, color: theme.muted }),
       ...rows,
     ].join("\n"),
   });
 }
 
 function renderRepoCard(repo) {
-  const description = repo.description || "Aplicación web con foco en privacidad, claridad y cuidado personal.";
+  const description = repo.description || "Aplicacion web con foco en privacidad, claridad y cuidado personal.";
 
   return shell({
-    width: 440,
-    height: 140,
+    width: 540,
+    height: 150,
     label: `Repositorio ${featuredRepo}`,
     body: [
-      text(24, 38, `${owner} / ${featuredRepo}`, { size: 20, color: theme.title, weight: 700 }),
-      text(24, 68, description.length > 58 ? `${description.slice(0, 55)}...` : description, { size: 13, color: theme.text }),
-      text(24, 104, `★ ${compactNumber(repo.stargazers_count)}`, { color: theme.orange, weight: 700 }),
-      text(100, 104, `Forks ${compactNumber(repo.forks_count)}`, { color: theme.pink, weight: 700 }),
-      text(176, 104, repo.language || "Web", { color: theme.accent, weight: 700 }),
-      text(320, 124, dateLabel(repo.updated_at), { size: 11, color: theme.muted }),
+      text(28, 44, `${owner} / ${featuredRepo}`, { size: 22, color: theme.title, weight: 800 }),
+      text(28, 72, description.length > 78 ? `${description.slice(0, 75)}...` : description, { size: 13, color: theme.text }),
+      `  <rect x="28" y="98" width="88" height="28" rx="14" fill="${theme.orange}" opacity="0.14"/>`,
+      text(44, 117, `Stars ${compactNumber(repo.stargazers_count)}`, { size: 13, color: theme.orange, weight: 800 }),
+      `  <rect x="128" y="98" width="86" height="28" rx="14" fill="${theme.pink}" opacity="0.14"/>`,
+      text(144, 117, `Forks ${compactNumber(repo.forks_count)}`, { size: 13, color: theme.pink, weight: 800 }),
+      `  <rect x="226" y="98" width="116" height="28" rx="14" fill="${theme.accent}" opacity="0.14"/>`,
+      text(244, 117, repo.language || "Web", { size: 13, color: theme.accent, weight: 800 }),
+      text(398, 126, `actualizado ${dateLabel(repo.updated_at)}`, { size: 11, color: theme.muted }),
     ].join("\n"),
   });
 }
