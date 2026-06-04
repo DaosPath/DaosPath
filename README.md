@@ -80,7 +80,18 @@
 
 ### 🤝 Conectar
 
-- Abierto a colaborar en proyectos web centrados en **cuidado personal**, **organización** y **espiritualidad práctica**.
-- También me interesan productos pequeños, claros y sostenibles que sirvan a comunidades reales.
+<p>
+  Abierto a colaborar en proyectos web, investigación aplicada y herramientas local-first.
+  Me interesan productos pequeños, claros y sostenibles que sirvan a comunidades reales.
+</p>
+
+<p>
+  <a href="https://github.com/DaosPath">
+    <img src="https://img.shields.io/badge/GitHub-DaosPath-8fb3ff?style=flat&logo=github&logoColor=white&labelColor=111827" alt="GitHub DaosPath" />
+  </a>
+  <a href="https://hijosdelsol.xyz">
+    <img src="https://img.shields.io/badge/Hijos%20del%20Sol-Comunidad-f6c453?style=flat&labelColor=111827" alt="Hijos del Sol" />
+  </a>
+</p>
 
 > Que el código sirva a la luz, no al ruido.
