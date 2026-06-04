@@ -231,5 +231,5 @@ const [user, repos, featured] = await Promise.all([
 const languages = await getLanguageTotals(repos);
 
 await writeFile(`${outputDir}/stats.svg`, renderStatsCard(user, repos), "utf8");
-await writeFile(`${outputDir}/languages-donut.svg`, renderLanguagesCard(languages), "utf8");
+await writeFile(`${outputDir}/languages-donut-v2.svg`, renderLanguagesCard(languages), "utf8");
 await writeFile(`${outputDir}/cic.svg`, renderRepoCard(featured), "utf8");
