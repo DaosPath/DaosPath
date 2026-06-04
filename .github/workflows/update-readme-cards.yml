@@ -17,10 +17,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Generate profile stats
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@v2.0.0
         with:
           card: stats
           options: username=DaosPath&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&rank_icon=github&locale=es
@@ -28,7 +28,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate top languages
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@v2.0.0
         with:
           card: top-langs
           options: username=DaosPath&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&locale=es
@@ -36,7 +36,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate Cic pin
-        uses: stats-organization/github-readme-stats-action@v2
+        uses: stats-organization/github-readme-stats-action@v2.0.0
         with:
           card: pin
           options: username=DaosPath&repo=Cic&theme=tokyonight&hide_border=true&locale=es
