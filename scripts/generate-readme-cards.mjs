@@ -86,6 +86,30 @@ function statRow(x, y, label, value, color = theme.accent) {
   ].join("\n");
 }
 
+function polarToCartesian(cx, cy, radius, angle) {
+  const radians = ((angle - 90) * Math.PI) / 180;
+  return {
+    x: cx + radius * Math.cos(radians),
+    y: cy + radius * Math.sin(radians),
+  };
+}
+
+function donutSlice(cx, cy, radius, startAngle, endAngle, color) {
+  const start = polarToCartesian(cx, cy, radius, endAngle);
+  const end = polarToCartesian(cx, cy, radius, startAngle);
+  const largeArc = endAngle - startAngle <= 180 ? 0 : 1;
+
+  return `  <path d="M ${start.x.toFixed(2)} ${start.y.toFixed(2)} A ${radius} ${radius} 0 ${largeArc} 0 ${end.x.toFixed(2)} ${end.y.toFixed(2)}" fill="none" stroke="${color}" stroke-width="28" stroke-linecap="round"/>`;
+}
+
+function legendRow(x, y, color, label, value) {
+  return [
+    `  <circle cx="${x}" cy="${y - 4}" r="5" fill="${color}"/>`,
+    text(x + 14, y, label, { size: 13, color: theme.text, weight: 700 }),
+    text(x + 210, y, value, { size: 12, color: theme.muted, anchor: "end" }),
+  ].join("\n");
+}
+
 function bar(x, y, width, color, label, value) {
   return [
     `  <circle cx="${x}" cy="${y - 12}" r="4" fill="${color}"/>`,
@@ -146,18 +170,31 @@ function renderStatsCard(user, repos) {
 function renderLanguagesCard(languages) {
   const total = languages.reduce((sum, [, bytes]) => sum + bytes, 0) || 1;
   const colors = [theme.title, theme.accent, theme.pink, theme.orange, theme.purple, theme.cyan];
-  const rows = languages.map(([language, bytes], index) => {
+  const slices = [];
+  const rows = [];
+  let angle = -90;
+
+  languages.forEach(([language, bytes], index) => {
     const pct = (bytes / total) * 100;
-    return bar(28, 80 + index * 25, Math.round((pct / 100) * 312), colors[index % colors.length], language, `${pct.toFixed(1)}%`);
+    const color = colors[index % colors.length];
+    const nextAngle = angle + (pct / 100) * 360;
+    slices.push(donutSlice(116, 128, 58, angle, nextAngle - 3, color));
+    rows.push(legendRow(224, 86 + index * 22, color, language, `${pct.toFixed(1)}%`));
+    angle = nextAngle;
   });
 
   return shell({
-    width: 380,
-    height: 220,
+    width: 440,
+    height: 240,
     label: `Lenguajes mas usados por ${owner}`,
     body: [
       text(26, 42, "Lenguajes mas usados", { size: 21, color: theme.title, weight: 800 }),
-      text(26, 65, "Por bytes en repos publicos", { size: 12, color: theme.muted }),
+      text(26, 65, "Distribucion por bytes", { size: 12, color: theme.muted }),
+      `  <circle cx="116" cy="128" r="58" fill="none" stroke="${theme.panel}" stroke-width="28"/>`,
+      ...slices,
+      `  <circle cx="116" cy="128" r="35" fill="${theme.bg}"/>`,
+      text(116, 124, "Top", { size: 13, color: theme.muted, weight: 700, anchor: "middle" }),
+      text(116, 145, "stack", { size: 18, color: theme.text, weight: 800, anchor: "middle" }),
       ...rows,
     ].join("\n"),
   });
