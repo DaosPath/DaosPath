@@ -1,61 +1,72 @@
 <h1 align="center">🌞 Hola, soy <strong>DaosPath</strong></h1>
 
 <p align="center">
-  Desarrollador web y miembro de <a href="https://hijosdelsol.xyz" target="_blank">Hijos del Sol</a>, dedicado al código abierto y a la búsqueda del bien supremo.
+  Desarrollador web enfocado en experiencias simples, útiles y humanas.
+  Mi camino mezcla código abierto, herramientas personales y comunidad.
+</p>
+
+<p align="center">
+  <a href="https://github.com/DaosPath">
+    <img src="https://komarev.com/ghpvc/?username=DaosPath&style=flat-square&color=0e75b6" alt="Visitas al perfil de DaosPath" />
+  </a>
+  <a href="https://hijosdelsol.xyz">
+    <img src="https://img.shields.io/badge/Hijos%20del%20Sol-Comunidad-f6c453?style=flat-square" alt="Hijos del Sol" />
+  </a>
 </p>
 
 ---
 
 ### 🧭 Sobre mí
 
-- 🧑‍💻 Me enfoco en el desarrollo **frontend web** (HTML, CSS, JavaScript, TypeScript, React).
-- 🌱 Me gusta crear herramientas que ayuden a las personas a **organizar su vida, su mente y sus recursos**.
-- 🌞 Formo parte de la comunidad <strong>Hijos del Sol</strong>, donde exploro cómo el código puede apoyar el crecimiento personal y comunitario.
-- 📚 Siempre aprendiendo algo nuevo: ahora mismo profundizando en **TypeScript**, **accesibilidad web** y **aplicaciones progresivas (PWA)**.
+- Desarrollo interfaces web con **HTML**, **CSS**, **JavaScript**, **TypeScript** y **React**.
+- Me interesan las herramientas que ayudan a ordenar vida, mente, energía y recursos.
+- Formo parte de **Hijos del Sol**, explorando tecnología al servicio del crecimiento personal y comunitario.
+- Estoy profundizando en **TypeScript**, **accesibilidad**, **PWA** y aplicaciones con datos locales.
 
 ---
 
-### 🛠️ Tecnologías que uso
+### 🛠️ Stack
 
-<div align="center">
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+</p>
 
 ---
 
-### 🌟 Proyectos destacados
+### 🌟 Proyecto destacado
 
-- 🩺 **[Cic](https://github.com/DaosPath/Cic)**  
-  Aplicación **React + Vite** para registrar el ciclo menstrual y obtener **insights asistidos por IA**, con enfoque en **privacidad**: datos locales vía IndexedDB, modo discreto y PWA lista para usarse offline.
+<p align="center">
+  <a href="https://github.com/DaosPath/Cic">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=DaosPath&repo=Cic&theme=tokyonight&hide_border=true" alt="Repositorio Cic" />
+  </a>
+</p>
 
----
-
-### 📊 Estadísticas de GitHub
-
-<div align="center">
-
-<a href="https://github.com/DaosPath">
-  <img src="https://github-readme-stats.vercel.app/api?username=DaosPath&show_icons=true&theme=radical" alt="Estadísticas de GitHub de DaosPath" />
-</a>
-
-<a href="https://github.com/DaosPath">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DaosPath&layout=compact&theme=radical" alt="Lenguajes más usados por DaosPath" />
-</a>
-
-</div>
+**Cic** es una aplicación **React + Vite** para registrar el ciclo menstrual y obtener insights asistidos por IA, con enfoque en privacidad: datos locales vía IndexedDB, modo discreto y PWA lista para usarse offline.
 
 ---
 
-### 🤝 Cómo conectar
+### 📊 Estadísticas
 
-- 💬 Abierto a colaborar en proyectos web centrados en **cuidado personal**, **organización** y **espiritualidad práctica**.
+<p align="center">
+  <a href="https://github.com/DaosPath">
+    <img height="165" src="https://github-readme-stats.vercel.app/api?username=DaosPath&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&rank_icon=github" alt="Estadísticas de GitHub de DaosPath" />
+  </a>
+  <a href="https://github.com/DaosPath">
+    <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DaosPath&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Lenguajes más usados por DaosPath" />
+  </a>
+</p>
 
-> “Que el código sirva a la luz, no al ruido.”
+---
+
+### 🤝 Conectar
+
+- Abierto a colaborar en proyectos web centrados en **cuidado personal**, **organización** y **espiritualidad práctica**.
+- También me interesan productos pequeños, claros y sostenibles que sirvan a comunidades reales.
+
+> Que el código sirva a la luz, no al ruido.
