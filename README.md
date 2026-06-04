@@ -1,5 +1,8 @@
+<h1 align="center">🌞 Hola, soy <strong>DaosPath</strong></h1>
+
 <p align="center">
-  <img src="./profile/hero-v1.svg" alt="Hola, soy DaosPath" />
+  Desarrollador web e investigador independiente. Construyo herramientas simples,
+  útiles y humanas para código abierto, productividad local y comunidades reales.
 </p>
 
 <p align="center">
@@ -15,16 +18,24 @@
 
 ### 🧭 Sobre mí
 
-<p align="center">
-  <img src="./profile/about-v1.svg" alt="Sobre mí" />
-</p>
+- Desarrollo interfaces web con **HTML**, **CSS**, **JavaScript**, **TypeScript** y **React**.
+- Me interesan los sistemas que ayudan a ordenar ideas, recursos y trabajo cotidiano.
+- Exploro investigación reproducible, agentes, bases de datos y herramientas local-first.
+- Formo parte de **Hijos del Sol**, donde pienso la tecnología como apoyo al crecimiento personal y comunitario.
 
 ---
 
 ### 🛠️ Stack
 
 <p align="center">
-  <img src="./profile/stack-v1.svg" alt="Stack tecnológico" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
 </p>
 
 ---
