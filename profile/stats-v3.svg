@@ -24,7 +24,7 @@
   <text x="59" y="153" fill="#9ece6a" font-family="Segoe UI, Ubuntu, sans-serif" font-size="14" font-weight="850" text-anchor="middle">R</text>
   <text x="88" y="141" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="700" text-anchor="start">Repositorios publicos</text>
   <text x="88" y="161" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11" font-weight="400" text-anchor="start">GitHub</text>
-  <text x="292" y="159" fill="#9ece6a" font-family="Segoe UI, Ubuntu, sans-serif" font-size="25" font-weight="900" text-anchor="end">7</text>
+  <text x="292" y="159" fill="#9ece6a" font-family="Segoe UI, Ubuntu, sans-serif" font-size="25" font-weight="900" text-anchor="end">10</text>
   <rect x="324" y="116" width="286" height="62" rx="15" fill="#20263a" opacity="0.76"/>
   <rect x="324.5" y="116.5" width="285" height="61" rx="14.5" fill="none" stroke="#ffb86c" opacity="0.24"/>
   <rect x="336" y="130" width="34" height="34" rx="12" fill="#ffb86c" opacity="0.16"/>
@@ -47,5 +47,5 @@
   <text x="382" y="235" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11" font-weight="400" text-anchor="start">GitHub</text>
   <text x="586" y="233" fill="#7dcfff" font-family="Segoe UI, Ubuntu, sans-serif" font-size="25" font-weight="900" text-anchor="end">0</text>
   <line x1="30" y1="268" x2="610" y2="268" stroke="#36405f" opacity="0.5"/>
-  <text x="452" y="278" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11" font-weight="400" text-anchor="start">actualizado 3 jun 2026</text>
+  <text x="452" y="278" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11" font-weight="400" text-anchor="start">actualizado 17 jun 2026</text>
 </svg>
