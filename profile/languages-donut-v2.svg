@@ -15,31 +15,31 @@
   <text x="26" y="42" fill="#8fb3ff" font-family="Segoe UI, Ubuntu, sans-serif" font-size="21" font-weight="800" text-anchor="start">Lenguajes mas usados</text>
   <text x="224" y="62" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="400" text-anchor="start">Distribucion por bytes</text>
   <circle cx="116" cy="128" r="58" fill="none" stroke="#20263a" stroke-width="28"/>
-  <path d="M 159.90 90.09 A 58 58 0 0 0 58.00 128.00" fill="none" stroke="#8fb3ff" stroke-width="28" stroke-linecap="round"/>
-  <path d="M 157.36 168.66 A 58 58 0 0 0 161.82 92.44" fill="none" stroke="#9ece6a" stroke-width="28" stroke-linecap="round"/>
-  <path d="M 114.50 185.98 A 58 58 0 0 0 155.18 170.77" fill="none" stroke="#f7768e" stroke-width="28" stroke-linecap="round"/>
-  <path d="M 80.49 173.86 A 58 58 0 0 0 111.47 185.82" fill="none" stroke="#ffb86c" stroke-width="28" stroke-linecap="round"/>
-  <path d="M 63.93 153.54 A 58 58 0 0 0 78.14 171.94" fill="none" stroke="#bb9af7" stroke-width="28" stroke-linecap="round"/>
-  <path d="M 58.08 131.04 A 58 58 0 0 0 62.66 150.78" fill="none" stroke="#7dcfff" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 151.13 81.85 A 58 58 0 0 0 58.00 128.00" fill="none" stroke="#8fb3ff" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 168.24 153.21 A 58 58 0 0 0 153.49 83.75" fill="none" stroke="#9ece6a" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 129.35 184.44 A 58 58 0 0 0 166.85 155.90" fill="none" stroke="#f7768e" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 87.24 178.37 A 58 58 0 0 0 126.38 185.06" fill="none" stroke="#ffb86c" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 64.34 154.37 A 58 58 0 0 0 84.64 176.79" fill="none" stroke="#bb9af7" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 58.08 131.04 A 58 58 0 0 0 63.03 151.63" fill="none" stroke="#7dcfff" stroke-width="28" stroke-linecap="round"/>
   <circle cx="116" cy="128" r="35" fill="#111827"/>
   <text x="116" y="124" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Top</text>
   <text x="116" y="145" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="800" text-anchor="middle">stack</text>
   <circle cx="224" cy="82" r="5" fill="#8fb3ff"/>
   <text x="238" y="86" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="700" text-anchor="start">TypeScript</text>
-  <text x="434" y="86" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="400" text-anchor="end">39.5%</text>
+  <text x="434" y="86" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="400" text-anchor="end">36.2%</text>
   <circle cx="224" cy="104" r="5" fill="#9ece6a"/>
   <text x="238" y="108" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="700" text-anchor="start">Python</text>
-  <text x="434" y="108" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="400" text-anchor="end">23.7%</text>
+  <text x="434" y="108" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="400" text-anchor="end">21.8%</text>
   <circle cx="224" cy="126" r="5" fill="#f7768e"/>
-  <text x="238" y="130" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="700" text-anchor="start">CSS</text>
-  <text x="434" y="130" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="400" text-anchor="end">13.0%</text>
+  <text x="238" y="130" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="700" text-anchor="start">C++</text>
+  <text x="434" y="130" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="400" text-anchor="end">14.1%</text>
   <circle cx="224" cy="148" r="5" fill="#ffb86c"/>
-  <text x="238" y="152" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="700" text-anchor="start">Java</text>
-  <text x="434" y="152" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="400" text-anchor="end">10.1%</text>
+  <text x="238" y="152" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="700" text-anchor="start">CSS</text>
+  <text x="434" y="152" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="400" text-anchor="end">12.0%</text>
   <circle cx="224" cy="170" r="5" fill="#bb9af7"/>
-  <text x="238" y="174" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="700" text-anchor="start">Rust</text>
-  <text x="434" y="174" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="400" text-anchor="end">7.3%</text>
+  <text x="238" y="174" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="700" text-anchor="start">Java</text>
+  <text x="434" y="174" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="400" text-anchor="end">9.2%</text>
   <circle cx="224" cy="192" r="5" fill="#7dcfff"/>
-  <text x="238" y="196" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="700" text-anchor="start">JavaScript</text>
-  <text x="434" y="196" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="400" text-anchor="end">6.4%</text>
+  <text x="238" y="196" fill="#d8def8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="700" text-anchor="start">Rust</text>
+  <text x="434" y="196" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="400" text-anchor="end">6.7%</text>
 </svg>
