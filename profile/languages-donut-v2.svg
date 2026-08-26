@@ -16,10 +16,10 @@
   <text x="224" y="62" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="400" text-anchor="start">Distribucion por bytes</text>
   <circle cx="116" cy="128" r="58" fill="none" stroke="#20263a" stroke-width="28"/>
   <path d="M 120.95 70.21 A 58 58 0 0 0 58.00 128.00" fill="none" stroke="#8fb3ff" stroke-width="28" stroke-linecap="round"/>
-  <path d="M 173.54 120.71 A 58 58 0 0 0 123.97 70.55" fill="none" stroke="#9ece6a" stroke-width="28" stroke-linecap="round"/>
-  <path d="M 136.21 182.37 A 58 58 0 0 0 173.84 123.73" fill="none" stroke="#f7768e" stroke-width="28" stroke-linecap="round"/>
-  <path d="M 94.41 181.83 A 58 58 0 0 0 133.33 183.35" fill="none" stroke="#ffb86c" stroke-width="28" stroke-linecap="round"/>
-  <path d="M 68.76 161.65 A 58 58 0 0 0 91.62 180.63" fill="none" stroke="#bb9af7" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 173.54 120.70 A 58 58 0 0 0 123.96 70.55" fill="none" stroke="#9ece6a" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 136.23 182.36 A 58 58 0 0 0 173.84 123.72" fill="none" stroke="#f7768e" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 94.40 181.83 A 58 58 0 0 0 133.35 183.34" fill="none" stroke="#ffb86c" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 68.76 161.65 A 58 58 0 0 0 91.62 180.62" fill="none" stroke="#bb9af7" stroke-width="28" stroke-linecap="round"/>
   <path d="M 58.08 131.04 A 58 58 0 0 0 67.06 159.13" fill="none" stroke="#7dcfff" stroke-width="28" stroke-linecap="round"/>
   <circle cx="116" cy="128" r="35" fill="#111827"/>
   <text x="116" y="124" fill="#8892b8" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Top</text>
